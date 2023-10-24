@@ -1,0 +1,98 @@
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url('https://images.unsplash.com/photo-1526925539332-aa3b66e35444?auto=format&fit=crop&q=80&w=1000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGRldmVsb3BlcnxlbnwwfHwwfHx8MA%3D%3D');
+    color: aliceblue;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+  
+  }
+  
+  /* Style the side navigation */
+  .sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  
+  }
+  
+  
+  /* Side navigation links */
+  .sidenav a {
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+    display: block;
+    transition: 0.3s;
+  
+  }
+  
+  /* Change color on hover */
+  .sidenav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Style the content */
+  .content {
+    margin-left: 200px;
+    padding-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: calc(100% - 70px);
+    max-width: 980px;
+    margin-top: auto;
+    
+  }
+
+  /* Smaller screens */
+@media screen and (max-width: 768px) {
+    body {
+      /* Make the sidebar narrower */
+      .sidenav {
+        width: 150px;
+      }
+  
+      /* Make the content area wider */
+      .content {
+        margin-left: 200px;
+      }
+  
+      /* Make the font size smaller */
+      h2 {
+        font-size: 24px;
+      }
+  
+      /* Make the input fields narrower */
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 80%;
+      }
+  
+      /* Make the submit button smaller */
+      input[type="submit"] {
+        padding: 10px 15px;
+      }
+    }
+}
+
+
+  
